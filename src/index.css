@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-champagne: #D9C3A0;
+  --color-champagne-light: #E8D9BF;
+  --color-champagne-muted: #CBB087;
+  --color-rose-gold: #B76E79;
+  --color-rose-gold-dark: #9B5661;
+  --color-luxury-black: #171311;
+  --color-warm-ivory: #F7F1E8;
+  --color-antique-gold: #B08D57;
+  --color-dark-brown: #30231D;
+
+  --font-display: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-editorial: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #D9C3A0;
+    color: #30231D;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #D9C3A0;
+    color: #30231D;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-editorial {
+    font-family: var(--font-editorial);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

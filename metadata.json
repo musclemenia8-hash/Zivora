@@ -1,0 +1,6 @@
+{
+  "name": "Zivora By Stuti",
+  "description": "Zivora By Stuti — Luxury Jewellery and Watches. Jewelry that make you shine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
